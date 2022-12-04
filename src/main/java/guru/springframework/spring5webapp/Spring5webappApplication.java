@@ -10,3 +10,8 @@ public class Spring5webappApplication {
 		SpringApplication.run(Spring5webappApplication.class, args);
 	}
 }
+/*
+spring.main.banner-mode=off enlève le ascii art spring banner à l'execution
+logging.level.org.springframework=ERROR la console ne montre que les erreurs
+
+*/
