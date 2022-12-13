@@ -15,7 +15,7 @@ public class BookController {
 
     @RequestMapping("/books") //why ??
     public String getBooks(Model model){ //why ??
-        model.addAttribute("books", bookRepository.findAll()); //why ??
+        model.addAttribute("books", bookRepository.findAll()); //why ?? --> populates the model to pass it to the view layer
         return "books/list"; //why ?? --> tells the view layer (in MVC) to look in templates/books/list.html
     }
 }
